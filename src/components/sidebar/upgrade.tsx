@@ -1,7 +1,7 @@
 "use client";
 
-import { authClient } from "../../lib/auth-client";
-import { Button } from "../ui/button";
+import { authClient } from "@/src/lib/auth-client";
+import { Button } from "@/src/components/ui/button";
 import { Crown, Sparkles } from "lucide-react";
 
 export default function Upgrade() {

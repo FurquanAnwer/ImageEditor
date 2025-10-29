@@ -13,20 +13,20 @@ import {
   RotateCcw,
   Minus,
 } from "lucide-react";
-import { authClient } from "~/lib/auth-client";
+import { authClient } from "@/src/lib/auth-client";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Button } from "~/components/ui/button";
-import { Card, CardContent } from "~/components/ui/card";
-import { Input } from "~/components/ui/input";
+import { Button } from "@/src/components/ui/button";
+import { Card, CardContent } from "@/src/components/ui/card";
+import { Input } from "@/src/components/ui/input";
 import { toast } from "sonner";
-import { env } from "~/env";
+import { env } from "@/src/env";
 import { upload, Image as ImageKitImage } from "@imagekit/next";
 import {
   createProject,
   getUserProjects,
   deductCredits,
-} from "~/actions/projects";
+} from "@/src/actions/project";
 
 interface UploadedImage {
   fileId: string;

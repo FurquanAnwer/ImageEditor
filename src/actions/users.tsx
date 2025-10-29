@@ -1,6 +1,6 @@
-import { auth } from "../lib/auth";
+import { auth } from "@/src/lib/auth";
 import {headers} from "next/headers"
-import { db } from "../server/db";
+import { db } from "@/src/server/db";
 
 export async function getUserCredits(){
     const session = await auth.api.getSession({

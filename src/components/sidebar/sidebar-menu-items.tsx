@@ -4,7 +4,7 @@ import { LayoutDashboard, Wand2, FolderOpen, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { SidebarMenuButton, SidebarMenuItem, useSidebar } from "../ui/sidebar";
 import Link from "next/link";
-import { cn } from "~/lib/utils";
+import { cn } from "@/src/lib/utils";
 
 export default function SidebarMenuItems() {
   const path = usePathname();

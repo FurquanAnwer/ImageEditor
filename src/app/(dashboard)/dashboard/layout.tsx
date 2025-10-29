@@ -1,21 +1,22 @@
-import "~/styles/globals.css";
+import "@/src/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Providers } from "~/components/providers";
-import { Toaster } from "~/components/ui/sonner";
+import { Providers } from "@/src/components/providers";
+import { Toaster } from "@/src/components/ui/sonner";
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "~/components/ui/sidebar";
-import { AppSidebar } from "~/components/sidebar/app-sidebar";
-import { Separator } from "~/components/ui/separator";
+} from "@/src/components/ui/sidebar";
+import { AppSidebar } from "@/src/components/sidebar/app-sidebar";
+import { Separator } from "@/src/components/ui/separator";
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-} from "~/components/ui/breadcrumb";
-import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
+} from "@/src/components/ui/breadcrumb";
+
+import BreadcrumbPageClient from "@/src/components/sidebar/breadcrumb-page-client";
 
 export const metadata: Metadata = {
   title: "AI Image Editor",

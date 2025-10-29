@@ -15,15 +15,15 @@ import {
   Eye,
   Plus,
 } from "lucide-react";
-import { authClient } from "~/lib/auth-client";
+import { authClient } from "@/src/lib/auth-client";
 import { useEffect, useState } from "react";
-import { getUserProjects } from "~/actions/projects";
-import { Card, CardContent } from "~/components/ui/card";
-import { Button } from "~/components/ui/button";
-import { Input } from "~/components/ui/input";
+import { getUserProjects } from "@/src/actions/project";
+import { Card, CardContent } from "@/src/components/ui/card";
+import { Button } from "@/src/components/ui/button";
+import { Input } from "@/src/components/ui/input";
 import { useRouter } from "next/navigation";
 import { Image as ImageKitImage } from "@imagekit/next";
-import { env } from "~/env";
+import { env } from "@/src/env";
 
 interface Project {
   id: string;

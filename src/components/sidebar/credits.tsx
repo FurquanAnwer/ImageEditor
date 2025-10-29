@@ -1,5 +1,5 @@
 import { Coins, Sparkles } from 'lucide-react';
-import { getUserCredits } from "~/actions/users";
+import { getUserCredits } from "@/src/actions/users";
 
 export default async function Credits() {
   const credits = await getUserCredits();

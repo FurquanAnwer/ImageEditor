@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Providers } from "~/components/providers";
+import { Providers } from "@/src/components/providers";
 import { Sparkles, ImageIcon, Zap, Target } from "lucide-react";
 import Link from "next/link";
 

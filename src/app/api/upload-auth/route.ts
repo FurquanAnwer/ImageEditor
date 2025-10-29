@@ -1,5 +1,5 @@
 import {getUploadAuthParams} from "@imagekit/next/server";
-import {env} from "~/env";
+import {env} from "@/src/env";
 
 export async function GET(){
     try{

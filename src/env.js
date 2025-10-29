@@ -8,8 +8,13 @@ export const env = createEnv({
    */
   server: {
     DATABASE_URL: z.string().url(),
-    BETTER_AUTH_SECRET : z.string(),
-    BETTER_AUTH_URL : z.string().url(),
+    BETTER_AUTH_SECRET: z.string(),
+    BETTER_AUTH_URL: z.string().url(),
+    POLAR_ACCESS_TOKEN: z.string(),
+    POLAR_WEBHOOK_SECRET: z.string(),
+    IMAGEKIT_PRIVATE_KEY: z.string(),
+    IMAGEKIT_URL_ENDPOINT: z.string().url(),
+    IMAGEKIT_PUBLIC_KEY: z.string(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -21,7 +26,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    // NEXT_PUBLIC_CLIENTVAR: z.string(),
+    NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT: z.string().url(),
   },
 
   /**
@@ -31,9 +36,15 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
-    BETTER_AUTH_SECRET : process.env.BETTER_AUTH_SECRET,
-    BETTER_AUTH_URL : process.env.BETTER_AUTH_URL,
-    // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
+    BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+    BETTER_AUTH_URL: process.env.BETTER_AUTH_URL,
+    POLAR_ACCESS_TOKEN: process.env.POLAR_ACCESS_TOKEN,
+    POLAR_WEBHOOK_SECRET: process.env.POLAR_WEBHOOK_SECRET,
+    IMAGEKIT_PUBLIC_KEY: process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY,
+    IMAGEKIT_PRIVATE_KEY: process.env.IMAGEKIT_PRIVATE_KEY,
+    IMAGEKIT_URL_ENDPOINT: process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT,
+    NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT:
+      process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

@@ -5,9 +5,10 @@ import {
   SecuritySettingsCards,
   SignedIn,
 } from "@daveyplate/better-auth-ui";
+
 import { AccountSettingsCards } from "@daveyplate/better-auth-ui";
 import { Loader2 } from "lucide-react";
-import { authClient } from "~/lib/auth-client";
+import { authClient } from "@/src/lib/auth-client";
 import { useEffect, useState } from "react";
 
 export default function SettingsPage() {

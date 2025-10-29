@@ -1,7 +1,7 @@
 "use server"
 
-import { db } from "../server/db"
-import { auth } from "../lib/auth"
+import { db } from "@/src/server/db"
+import { auth } from "@/src/lib/auth"
 import {headers} from "next/headers"
 
 interface CreateProjectData{
