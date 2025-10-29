@@ -1,14 +1,5 @@
 "use client"
 
-import {RedirectToSignIn,SignedIn} from "@daveyplate/better-auth-ui"
-import {
-    Loader2,
-    Image as ImageIcon,
-    Sparkles,
-    Users,
-    Calendar,
-    TrendingUp,"use client";
-
 import { RedirectToSignIn, SignedIn } from "@daveyplate/better-auth-ui";
 import {
   Loader2,
@@ -20,16 +11,16 @@ import {
   Camera,
   Star,
   ArrowRight,
-  Plus,
+  Plus
 } from "lucide-react";
-import { authClient } from "~/lib/auth-client";
+import { authClient } from "../../../lib/auth-client";
 import { useEffect, useState } from "react";
-import { getUserProjects } from "~/actions/projects";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
-import { Button } from "~/components/ui/button";
+import { getUserProjects } from "@/src/actions/project";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
+import { Button } from "../../../components/ui/button";
 import { useRouter } from "next/navigation";
 import { Image as ImageKitImage } from "@imagekit/next";
-import { env } from "~/env";
+import { env } from "@/env";
 
 interface Project {
   id: string;
