@@ -8,7 +8,7 @@ export async function getUserCredits(){
     });
     if(!session)return null;
 
-    const user = await db.user.findUniqueorThrow({
+    const user = await db.user.findUniqueOrThrow({
         where : {id:session.user.id},
         select:{credits:true},
     });
