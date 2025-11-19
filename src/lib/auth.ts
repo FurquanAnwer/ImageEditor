@@ -1,7 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
-// If your Prisma file is located elsewhere, you can change the path
 import { Polar } from "@polar-sh/sdk";
 import { env } from "@/src/env";
 import { checkout, polar, portal, webhooks } from "@polar-sh/better-auth";
@@ -11,6 +10,7 @@ const polarClient = new Polar({
   accessToken: env.POLAR_ACCESS_TOKEN,
   server: "sandbox",
 });
+
 
 const prisma = new PrismaClient();
 export const auth = betterAuth({
