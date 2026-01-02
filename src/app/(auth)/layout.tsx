@@ -8,7 +8,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
     <Providers>
       <div className="flex min-h-screen">
 
-        {/* Right Side - Auth Form */}
+        {/* Left Side - Auth Form */}
         <div className="flex flex-1 flex-col justify-center bg-gradient-to-br from-white to-gray-100/50 px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             {/* Mobile Logo */}
@@ -39,7 +39,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
 
-        {/* Left Side - Branding */}
+        {/* Right Side - Branding */}
         <div className="relative hidden overflow-hidden bg-gradient-to-br from-black via-gray-900 to-gray-800 lg:flex lg:w-1/2">
           <div className="bg-grid-white/[0.05] absolute inset-0 bg-[size:30px_30px]" />
           <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16">
