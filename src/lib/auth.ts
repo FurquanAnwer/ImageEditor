@@ -8,7 +8,7 @@ import { db } from "@/src/server/db";
 
 const polarClient = new Polar({
   accessToken: env.POLAR_ACCESS_TOKEN,
-  server: "sandbox",
+  server: "production",
 });
 
 

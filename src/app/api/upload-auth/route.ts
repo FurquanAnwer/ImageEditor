@@ -14,7 +14,8 @@ export async function GET(){
             publicKey:env.IMAGEKIT_PUBLIC_KEY,
             urlEndpoint : env.IMAGEKIT_URL_ENDPOINT,
         });
-    }catch(error){
+    }
+    catch(error){
         console.error("Upload auth error:",error);
         return Response.json(
             {error:"Failed to generate upload credentials"},
