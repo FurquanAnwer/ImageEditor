@@ -5,7 +5,7 @@ import { Geist } from "next/font/google";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "Image Editor",
+  title: "PixelFlow",
   description: "Created by Furquan Anwer",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
