@@ -66,7 +66,7 @@ npm run dev
 5️⃣ Open your browser at:
 
 ```
-http://localhost:3000
+http://localhost:3050
 ```
 
 Now you’ll see the PixelFlow interface ready to use locally!
